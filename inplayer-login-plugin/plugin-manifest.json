@@ -1,0 +1,38 @@
+{
+  "api": {
+    "require_startup_execution": false,
+    "class_name": "com.applicaster.plugin.login.inplayer.InplayerLoginContract",
+    "proguard_rules": "-keep public class com.applicaster.plugin.login.inplayer.InplayerLoginContract {\n    public <fields>;\n    public <methods>;\n}\n"
+  },
+  "dependency_repository_url": [
+    {
+      "url": "https://dl.bintray.com/applicaster-ltd/maven_plugins/"
+    }
+  ],
+  "platform": "android",
+  "author_name": "Vladyslav Sumtsov",
+  "author_email": "vlad.sumtsov@corewillsoft.com",
+  "name": "InPlayerWebviewLogin",
+  "description": "Zapp Android Plugin for Inplayer authentication via WebView",
+  "type": "login",
+  "identifier": "InPlayerWebviewLogin",
+  "screen": false,
+  "ui_builder_support": true,
+  "dependency_name": "com.applicaster:inplayer-login-plugin",
+  "manifest_version": "0.1.0",
+  "dependency_version": "0.1.0",
+  "whitelisted_account_ids": [
+    "5d1b6753564117000de4bb60"
+  ],
+  "min_zapp_sdk": "12.0.0",
+  "deprecated_since_zapp_sdk": "",
+  "unsupported_since_zapp_sdk": "",
+  "react_native": false,
+  "custom_configuration_fields": [
+    {
+      "key": "login_url",
+      "type": "text",
+      "tooltip_text": "Url for the login. Example: https://sport1webview.inplayer.com"
+    }
+  ]
+}

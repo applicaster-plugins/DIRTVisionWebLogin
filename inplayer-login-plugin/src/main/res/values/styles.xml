@@ -1,0 +1,7 @@
+<resources>
+    <style name="InplayerLoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#1f2021</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">#f7bc47</item>
+    </style>
+</resources>
