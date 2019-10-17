@@ -21,7 +21,7 @@ There is 1 plugins with corresponding gradle modules:
 $MODULE/gradle.properties
 $MODULE/plugin-manifest.json
 ```
-2. Deploy from the shell
+2. Deploy manifest from the shell. Circle ci will deploy to bintray automatically.
 ```
-./gradlew --no-daemon $MODULE:build $MODULE:bintrayUpload --no-configure-on-demand --no-parallel && zappifest publish --manifest $MODULE/plugin-manifest.json --access-token $YOUR_ZAPP_ACCESS_TOKEN
+zappifest publish --manifest $MODULE/plugin-manifest.json --access-token $YOUR_ZAPP_ACCESS_TOKEN
 ```
