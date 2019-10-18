@@ -3,6 +3,7 @@ package com.applicaster.plugin.login.inplayer
 import android.annotation.SuppressLint
 import android.content.Context
 import android.net.Uri
+import com.applicaster.atom.model.APAtomEntry
 import com.applicaster.plugin.login.inplayer.data.config.ConfigProviderImpl
 import com.applicaster.plugin.login.inplayer.data.service.AccountDataProviderImpl
 import com.applicaster.plugin.login.inplayer.data.service.AuthServiceImpl
@@ -24,7 +25,6 @@ class InplayerLoginContract : LoginContract {
 
     private var loginCallback: LoginContract.Callback? = null
 
-    @SuppressLint("CheckResult")
     override fun executeOnStartup(context: Context, listener: HookListener) {
         Timber.d("executeOnStartup")
         listener.onHookFinished()
@@ -38,11 +38,11 @@ class InplayerLoginContract : LoginContract {
             appendQueryParameter("redirect_uri", "redirect_uri")
             build().toString()
         }
-        Timber.d("Plugin configProvider: $configProvider")
     }
 
-    override fun login(context: Context, additionalParams: Map<*, *>, callback: LoginContract.Callback?) {
+    override fun login(context: Context, additionalParams: Map<*, *>?, callback: LoginContract.Callback?) {
         this.loginCallback = callback
+        Timber.d("login additionalParams :: $additionalParams")
         InplayerLoginActivity.launch(
             context = context, params = InplayerLoginActivity.Params(
                 loginUrl = configProvider.loginUrl
@@ -51,15 +51,15 @@ class InplayerLoginContract : LoginContract {
     }
 
     override fun login(
-        context: Context, playable: Playable, additionalParams: Map<*, *>, callback: LoginContract.Callback
+        context: Context, playable: Playable?, additionalParams: Map<*, *>?, callback: LoginContract.Callback?
     ) {
         this.loginCallback = callback
+        Timber.d("login playable :: $playable additionalParams :: $additionalParams")
         InplayerLoginActivity.launch(
             context = context, params = InplayerLoginActivity.Params(
                 loginUrl = configProvider.loginUrl
             )
         )
-        Timber.d("playable :: $playable additionalParams :: $additionalParams")
     }
 
     @SuppressLint("CheckResult")
@@ -68,25 +68,26 @@ class InplayerLoginContract : LoginContract {
         authService.logout()
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                Timber.d("Logout successfully finished")
                 callback?.onResult(true)
             }, {
-                Timber.w(it, "Logout finished with error")
                 callback?.onResult(false)
             })
 
     }
 
-    override fun isTokenValid(): Boolean {
-        Timber.d("isTokenValid call")
-        return !accountDataProvider.accessToken.isNullOrEmpty()
+    override fun isItemLocked(model: Any) =
+        (model as? APAtomEntry.APAtomEntryPlayable)?.isFree == false && !isTokenValid
+
+
+    override fun isItemLocked(context: Context?, model: Any, callback: LoginContract.Callback) {
+        callback.onResult(isItemLocked(model))
     }
 
-    override fun getToken(): String? {
-        val token = accountDataProvider.accessToken
-        Timber.d("getToken() $token")
-        return token
+    override fun isTokenValid(): Boolean {
+        return !accountDataProvider.accessToken.isNullOrEmpty() && !authService.isAccessTokenExpired()
     }
+
+    override fun getToken() = accountDataProvider.accessToken
 
     override fun setToken(token: String?) {
         Timber.d("set token = $token")
@@ -128,6 +129,4 @@ class InplayerLoginContract : LoginContract {
     override fun executeOnApplicationReady(context: Context, listener: HookListener) {
         Timber.d("executeOnApplicationReady context :: $context listener :: $listener")
     }
-
-    override fun isItemLocked(model: Any) = false
 }
