@@ -17,6 +17,8 @@ class InplayerLoginContract : LoginContract {
 
     companion object {
         const val REFRESH_TOKEN_KEY = "refresh_token_key"
+        const val REDIRECT_URI_KEY = "redirect_uri"
+        const val REDIRECT_URI_VALUE = "https://www.app.app"
 
         private val configProvider by lazy { ConfigProviderImpl() }
         private val accountDataProvider by lazy { AccountDataProviderImpl() }
@@ -35,7 +37,7 @@ class InplayerLoginContract : LoginContract {
         val loginUrl = params["login_url"] as? String
         configProvider.loginUrl = Uri.parse(loginUrl).buildUpon().run {
             appendQueryParameter("platform", "android")
-            appendQueryParameter("redirect_uri", "redirect_uri")
+            appendQueryParameter(REDIRECT_URI_KEY, REDIRECT_URI_VALUE)
             build().toString()
         }
     }
