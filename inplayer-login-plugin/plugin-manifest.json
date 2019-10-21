@@ -18,7 +18,7 @@
   "identifier": "InPlayerWebviewLogin",
   "screen": false,
   "ui_builder_support": true,
-  "dependency_name": "com.applicaster:inplayer-login-plugin",
+  "dependency_name": "com.applicaster:InPlayerWebviewLogin-Android",
   "manifest_version": "0.1.0",
   "dependency_version": "0.1.0",
   "whitelisted_account_ids": [
