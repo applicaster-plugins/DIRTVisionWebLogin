@@ -18,13 +18,13 @@
   "identifier": "InPlayerWebviewLogin",
   "screen": false,
   "ui_builder_support": true,
-  "dependency_name": "com.applicaster:inplayer-login-plugin",
+  "dependency_name": "com.applicaster:InPlayerWebviewLogin-Android",
   "manifest_version": "0.1.0",
   "dependency_version": "0.1.0",
   "whitelisted_account_ids": [
     "5d1b6753564117000de4bb60"
   ],
-  "min_zapp_sdk": "12.0.0",
+  "min_zapp_sdk": "11.1.4",
   "deprecated_since_zapp_sdk": "",
   "unsupported_since_zapp_sdk": "",
   "react_native": false,
