@@ -25,6 +25,10 @@ class InplayerLoginContract : LoginContract {
         private val authService by lazy { AuthServiceImpl(accountDataProvider) }
     }
 
+    init {
+        if (Timber.treeCount() == 0) Timber.plant(Timber.DebugTree())
+    }
+
     private var loginCallback: LoginContract.Callback? = null
 
     override fun executeOnStartup(context: Context, listener: HookListener) {
@@ -77,8 +81,10 @@ class InplayerLoginContract : LoginContract {
 
     }
 
-    override fun isItemLocked(model: Any) =
-        (model as? APAtomEntry.APAtomEntryPlayable)?.isFree == false && !isTokenValid
+    override fun isItemLocked(model: Any): Boolean {
+        Timber.d("isItemLocked")
+        return (model as? APAtomEntry.APAtomEntryPlayable)?.isFree == false && !isTokenValid
+    }
 
 
     override fun isItemLocked(context: Context?, model: Any, callback: LoginContract.Callback) {
@@ -86,6 +92,7 @@ class InplayerLoginContract : LoginContract {
     }
 
     override fun isTokenValid(): Boolean {
+        Timber.d("isTokenValid token = $accountDataProvider.accessToken")
         return !accountDataProvider.accessToken.isNullOrEmpty() && !authService.isAccessTokenExpired()
     }
 
@@ -130,5 +137,6 @@ class InplayerLoginContract : LoginContract {
 
     override fun executeOnApplicationReady(context: Context, listener: HookListener) {
         Timber.d("executeOnApplicationReady context :: $context listener :: $listener")
+        listener.onHookFinished()
     }
 }

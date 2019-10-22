@@ -17,7 +17,7 @@ class AuthServiceImpl(val accountDataProvider: AccountDataProvider) : AuthServic
     }
 
     override fun isAccessTokenExpired() = accountDataProvider.run {
-        refreshToken != null && TimeUnit.MILLISECONDS.toSeconds(currentTimeMillis() - tokenUpdateTime) > ACCESS_TOKEN_VALID_DAYS_PERIOD
+        refreshToken != null && TimeUnit.MILLISECONDS.toDays(currentTimeMillis() - tokenUpdateTime) > ACCESS_TOKEN_VALID_DAYS_PERIOD
     }
 
     override fun logout() = Completable.fromAction { accountDataProvider.clear() }
