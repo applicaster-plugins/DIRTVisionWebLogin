@@ -9,6 +9,7 @@ import com.applicaster.plugin.login.inplayer.data.service.AccountDataProviderImp
 import com.applicaster.plugin.login.inplayer.data.service.AuthServiceImpl
 import com.applicaster.plugin_manager.hook.HookListener
 import com.applicaster.plugin_manager.login.LoginContract
+import com.applicaster.plugin_manager.login.LoginContract.Callback
 import com.applicaster.plugin_manager.playersmanager.Playable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import timber.log.Timber
@@ -29,7 +30,7 @@ class InplayerLoginContract : LoginContract {
         if (Timber.treeCount() == 0) Timber.plant(Timber.DebugTree())
     }
 
-    private var loginCallback: LoginContract.Callback? = null
+    private var loginCallback: Callback? = null
 
     override fun executeOnStartup(context: Context, listener: HookListener) {
         Timber.d("executeOnStartup")
@@ -46,21 +47,13 @@ class InplayerLoginContract : LoginContract {
         }
     }
 
-    override fun login(context: Context, additionalParams: Map<*, *>?, callback: LoginContract.Callback?) {
-        this.loginCallback = callback
-        Timber.d("login additionalParams :: $additionalParams")
-        InplayerLoginActivity.launch(
-            context = context, params = InplayerLoginActivity.Params(
-                loginUrl = configProvider.loginUrl
-            )
-        )
+    override fun login(context: Context, additionalParams: Map<*, *>?, callback: Callback?) {
+        login(context, null, additionalParams, callback)
     }
 
-    override fun login(
-        context: Context, playable: Playable?, additionalParams: Map<*, *>?, callback: LoginContract.Callback?
-    ) {
-        this.loginCallback = callback
+    override fun login(context: Context, playable: Playable?, additionalParams: Map<*, *>?, callback: Callback?) {
         Timber.d("login playable :: $playable additionalParams :: $additionalParams")
+        this.loginCallback = callback
         InplayerLoginActivity.launch(
             context = context, params = InplayerLoginActivity.Params(
                 loginUrl = configProvider.loginUrl
@@ -69,7 +62,7 @@ class InplayerLoginContract : LoginContract {
     }
 
     @SuppressLint("CheckResult")
-    override fun logout(context: Context, additionalParams: Map<*, *>, callback: LoginContract.Callback?) {
+    override fun logout(context: Context, additionalParams: Map<*, *>, callback: Callback?) {
         Timber.d("logout additionalParams = $additionalParams")
         authService.logout()
             .observeOn(AndroidSchedulers.mainThread())
@@ -87,7 +80,7 @@ class InplayerLoginContract : LoginContract {
     }
 
 
-    override fun isItemLocked(context: Context?, model: Any, callback: LoginContract.Callback) {
+    override fun isItemLocked(context: Context?, model: Any, callback: Callback) {
         callback.onResult(isItemLocked(model))
     }
 

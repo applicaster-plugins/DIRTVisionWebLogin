@@ -35,6 +35,7 @@ class InplayerWebClient(private val callback: UpdateCallback) : WebViewClient() 
             } else {
                 LoginManager.getLoginPlugin().token = authToken
                 LoginManager.getLoginPlugin().userData = mapOf(InplayerLoginContract.REFRESH_TOKEN_KEY to refreshToken)
+                callback.onUpdate(State.SUCCESS)
                 return true
             }
         }
@@ -45,14 +46,6 @@ class InplayerWebClient(private val callback: UpdateCallback) : WebViewClient() 
         super.onPageStarted(view, url, favicon)
         callback.onUpdate(State.LOADING)
         Timber.i("onPageStarted $url")
-    }
-
-    override fun onPageFinished(view: WebView, url: String) {
-        super.onPageFinished(view, url)
-        Timber.i("onPageFinished $url")
-        if (!LoginManager.getLoginPlugin().token.isNullOrEmpty()) {
-            callback.onUpdate(State.SUCCESS)
-        }
     }
 
     companion object {
