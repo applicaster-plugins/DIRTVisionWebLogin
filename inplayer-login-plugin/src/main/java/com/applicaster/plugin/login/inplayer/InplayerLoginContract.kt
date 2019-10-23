@@ -131,7 +131,7 @@ class InplayerLoginContract : LoginContract {
     }
 
     override fun executeOnApplicationReady(context: Context, listener: HookListener) {
-        Timber.d("executeOnApplicationReady context :: $context listener :: $listener")
+        Timber.d("executeOnApplicationReady context ::  $context listener :: $listener")
         listener.onHookFinished()
     }
 }
