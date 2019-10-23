@@ -75,10 +75,12 @@ class InplayerLoginContract : LoginContract {
     }
 
     override fun isItemLocked(model: Any): Boolean {
-        Timber.d("isItemLocked")
-        return (model as? APAtomEntry.APAtomEntryPlayable)?.isFree == false && !isTokenValid
+        return if (model is APAtomEntry.APAtomEntryPlayable) {
+            model.isFree.not() && !isTokenValid
+        } else {
+            false
+        }
     }
-
 
     override fun isItemLocked(context: Context?, model: Any, callback: Callback) {
         callback.onResult(isItemLocked(model))
