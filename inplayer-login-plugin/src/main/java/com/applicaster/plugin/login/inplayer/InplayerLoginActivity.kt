@@ -49,6 +49,9 @@ class InplayerLoginActivity : AppCompatActivity() {
             webViewClient = InplayerWebClient(object : UpdateCallback {
                 override fun onUpdate(state: State) {
                     Timber.d("Web client status $state")
+                    when (state) {
+                        State.SUCCESS -> finish()
+                    }
                 }
             })
             loadUrl(params?.loginUrl)
