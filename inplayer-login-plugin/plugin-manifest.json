@@ -33,6 +33,11 @@
       "key": "login_url",
       "type": "text",
       "tooltip_text": "Url for the login. Example: https://sport1webview.inplayer.com"
+    },
+    {
+      "key": "inplayer_base_url",
+      "type": "text",
+      "tooltip_text": "Url for the login. Example: https://services.inplayer.com"
     }
   ]
 }
