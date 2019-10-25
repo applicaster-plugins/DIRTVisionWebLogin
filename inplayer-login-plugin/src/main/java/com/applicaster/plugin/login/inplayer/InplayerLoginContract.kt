@@ -6,6 +6,7 @@ import android.net.Uri
 import com.applicaster.atom.model.APAtomEntry
 import com.applicaster.plugin.login.inplayer.data.config.ConfigProviderImpl
 import com.applicaster.plugin.login.inplayer.data.service.AccountDataProviderImpl
+import com.applicaster.plugin.login.inplayer.data.service.ApiFactoryImpl
 import com.applicaster.plugin.login.inplayer.data.service.AuthServiceImpl
 import com.applicaster.plugin_manager.hook.HookListener
 import com.applicaster.plugin_manager.login.LoginContract
@@ -23,7 +24,8 @@ class InplayerLoginContract : LoginContract {
 
         private val configProvider by lazy { ConfigProviderImpl() }
         private val accountDataProvider by lazy { AccountDataProviderImpl() }
-        private val authService by lazy { AuthServiceImpl(accountDataProvider) }
+        private val apiFactory by lazy { ApiFactoryImpl(configProvider, accountDataProvider) }
+        private val authService by lazy { AuthServiceImpl(apiFactory.authApi, accountDataProvider) }
     }
 
     init {
@@ -34,7 +36,23 @@ class InplayerLoginContract : LoginContract {
 
     override fun executeOnStartup(context: Context, listener: HookListener) {
         Timber.d("executeOnStartup")
-        listener.onHookFinished()
+        when {
+            authService.isRefreshTokenExpired() -> {
+                accountDataProvider.clear()
+                listener.onHookFinished()
+            }
+            authService.isAccessTokenExpired() ->
+                authService.refreshToken()
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe({
+                        Timber.d("Startup checks are successfully finished")
+                        listener.onHookFinished()
+                    }, {
+                        Timber.w(it, "Startup checks are finished with error")
+                        listener.onHookFinished()
+                    })
+            else -> listener.onHookFinished()
+        }
     }
 
     override fun setPluginConfigurationParams(params: MutableMap<Any?, Any?>) {
@@ -45,6 +63,7 @@ class InplayerLoginContract : LoginContract {
             appendQueryParameter(REDIRECT_URI_KEY, REDIRECT_URI_VALUE)
             build().toString()
         }
+        configProvider.inplayerBaseUrl = params["inplayer_base_url"] as String
     }
 
     override fun login(context: Context, additionalParams: Map<*, *>?, callback: Callback?) {
@@ -67,14 +86,16 @@ class InplayerLoginContract : LoginContract {
         authService.logout()
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
+                Timber.d("Logout successfully finished")
                 callback?.onResult(true)
             }, {
+                Timber.w(it, "Logout finished with error")
                 callback?.onResult(false)
             })
-
     }
 
     override fun isItemLocked(model: Any): Boolean {
+        Timber.d("isItemLocked")
         return if (model is APAtomEntry.APAtomEntryPlayable) {
             model.isFree.not() && !isTokenValid
         } else {
@@ -131,7 +152,7 @@ class InplayerLoginContract : LoginContract {
     }
 
     override fun executeOnApplicationReady(context: Context, listener: HookListener) {
-        Timber.d("executeOnApplicationReady context :: $context listener :: $listener")
+        Timber.d("executeOnApplicationReady context ::  $context listener :: $listener")
         listener.onHookFinished()
     }
 }

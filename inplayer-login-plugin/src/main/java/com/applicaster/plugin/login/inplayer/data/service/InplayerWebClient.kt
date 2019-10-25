@@ -51,6 +51,5 @@ class InplayerWebClient(private val callback: UpdateCallback) : WebViewClient() 
     companion object {
         private val TOKEN_KEY = "inplayer_token"
         private val REFRESH_TOKEN_KEY = "inplayer_refresh_token"
-        private val STREAM_TOKEN_KEY = "stream_token"
     }
 }
