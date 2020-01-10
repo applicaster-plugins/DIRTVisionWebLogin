@@ -1,5 +1,5 @@
 defaults: &defaults
-  working_directory: ~/InPlayerWebviewLogin-Android
+  working_directory: ~/DIRTVisionWebLogin-Android
   docker:
     - image: circleci/android:api-28
       environment:
