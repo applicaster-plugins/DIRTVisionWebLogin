@@ -18,8 +18,8 @@
   "identifier": "DIRTVisionInplayerWebviewLogin",
   "screen": false,
   "ui_builder_support": true,
-  "dependency_name": "com.applicaster:InPlayerWebviewLogin-Android",
-  "manifest_version": "0.1.0",
+  "dependency_name": "com.applicaster:dirtvision-android-login-plugin",
+  "manifest_version": "0.1.1",
   "dependency_version": "0.1.+",
   "whitelisted_account_ids": [
     "5d779d6838d801000f347f47"
@@ -32,7 +32,7 @@
     {
       "key": "login_url",
       "type": "text",
-      "tooltip_text": "Url for the login. Example: https://sport1webview.inplayer.com"
+      "tooltip_text": "Url for the login. Example: https://dirtvision.inplayer.com"
     },
     {
       "key": "inplayer_base_url",

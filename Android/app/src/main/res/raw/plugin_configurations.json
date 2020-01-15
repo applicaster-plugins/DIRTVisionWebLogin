@@ -13,7 +13,7 @@
       "author_name": "Vladyslav Sumtsov",
       "author_email": "vlad.sumtsov@corewillsoft.com",
       "min_zapp_sdk": "7.0.0",
-      "dependency_name": "com.applicaster:inplayer-login-plugin",
+      "dependency_name": "com.applicaster:dirtvision-android-login-plugin",
       "manifest_version": "0.1.0",
       "dependency_version": "0.1.+",
       "whitelisted_account_ids": [],
@@ -22,7 +22,7 @@
       "unsupported_since_zapp_sdk": ""
     },
     "configuration_json": {
-      "login_url": "https://sport1webview.inplayer.com",
+      "login_url": "https://dirtvision.inplayer.com",
       "inplayer_base_url": "https://services.inplayer.com"
     }
   },
