@@ -1,0 +1,33 @@
+{
+  "api": {
+    "require_startup_execution": true,
+    "class_name": "InPlayerWebviewLogin",
+    "modules": [
+      "InPlayerWebviewLogin"
+    ]
+  },
+  "dependency_repository_url": [
+    "https://github.com/applicaster/DIRTVisionWebLogin.git"
+  ],
+  "platform": "ios",
+  "author_name": "Vlad Sumtsov",
+  "author_email": "vlad.sumtsov@corewillsoft.com",
+  "manifest_version": "0.1.0",
+  "name": "DIRTVisionInplayerWebviewLogin",
+  "description": "Simple login that launch a weview",
+  "type": "general",
+  "screen": false,
+  "identifier": "DIRTVisionInplayerWebviewLogin",
+  "ui_builder_support": true,
+  "dependency_name": "DIRTVisionInplayerWebviewLogin",
+  "dependency_version": "0.1.0",
+  "whitelisted_account_ids": [
+    "5d779d6838d801000f347f47"
+  ],
+  "min_zapp_sdk": "12.0.0",
+  "deprecated_since_zapp_sdk": "",
+  "unsupported_since_zapp_sdk": "",
+  "react_native": false,
+  "custom_configuration_fields": [
+  ]
+}

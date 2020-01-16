@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InPlayerWebViewController" customModule="InPlayerWebviewLogin" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="TbE-lq-l7E" id="3Qa-Hk-SGY"/>
+                <outlet property="view" destination="iN0-l3-epB" id="X64-zo-4C5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbE-lq-l7E">
+                    <rect key="frame" x="327" y="30" width="38" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="7UN-Hp-fSN"/>
+                        <constraint firstAttribute="width" constant="38" id="sMO-kH-E2t"/>
+                    </constraints>
+                    <state key="normal" image="av_close_btn.png"/>
+                    <connections>
+                        <action selector="tapClose" destination="-1" eventType="touchUpInside" id="zXY-Rk-Kf3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TbE-lq-l7E" firstAttribute="top" secondItem="D29-5e-oMX" secondAttribute="top" constant="10" id="vSj-gf-tAT"/>
+                <constraint firstAttribute="trailing" secondItem="TbE-lq-l7E" secondAttribute="trailing" constant="10" id="wBl-0B-hbS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="D29-5e-oMX"/>
+            <point key="canvasLocation" x="40.799999999999997" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="av_close_btn.png" width="38" height="44"/>
+    </resources>
+</document>
