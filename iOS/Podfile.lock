@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.9.0)
+  - ZappLoginPluginsSDK (8.0.2):
+    - Alamofire
+    - ZappPlugins
+  - ZappPlugins (9.4.7)
+
+DEPENDENCIES:
+  - ZappLoginPluginsSDK
+  - ZappPlugins
+
+SPEC REPOS:
+  "git@github.com:applicaster/CocoaPods-Private.git":
+    - ZappLoginPluginsSDK
+  "git@github.com:applicaster/CocoaPods.git":
+    - ZappPlugins
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  ZappLoginPluginsSDK: 7afb61fa738f1f73666a8250bd14b5dda8cc8f87
+  ZappPlugins: 4cf8bbf9b5393c4e4b681b926198f616f3d28892
+
+PODFILE CHECKSUM: 35bb9ead4da4f6340503bfceb79fa36d6f133d44
+
+COCOAPODS: 1.7.5
