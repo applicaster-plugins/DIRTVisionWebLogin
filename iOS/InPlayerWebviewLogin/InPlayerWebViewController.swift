@@ -8,7 +8,7 @@
 
 import Foundation
 import WebKit
-import ZappLoginPluginsSDK
+import ZappPlugins
 
 public class InPlayerWebViewController: UIViewController {
     typealias Completion = (ZPLoginOperationStatus) -> Void
