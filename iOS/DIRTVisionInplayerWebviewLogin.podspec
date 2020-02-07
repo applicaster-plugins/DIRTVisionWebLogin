@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DIRTVisionInplayerWebviewLogin"
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = "DIRTVisionInplayerWebviewLogin"
   s.description      = <<-DESC
                         DIRTVisionInplayerWebviewLogin.
@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.static_framework = true
 
-  s.public_header_files = 'InPlayerWebviewLogin/**/*.h'
-  s.source_files = 'InPlayerWebviewLogin/**/*.{h,m,swift}'
+  s.public_header_files = 'DIRTVisionInplayerWebviewLogin/**/*.h'
+  s.source_files = 'DIRTVisionInplayerWebviewLogin/**/*.{h,m,swift}'
 
-  s.resources = [ "InPlayerWebviewLogin/**/*.xib",
-                  "InPlayerWebviewLogin/**/*.png"]
+  s.resources = [ "DIRTVisionInplayerWebviewLogin/**/*.xib",
+                  "DIRTVisionInplayerWebviewLogin/**/*.png"]
 
   s.xcconfig =  { 
                   'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',

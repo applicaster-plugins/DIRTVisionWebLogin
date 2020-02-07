@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6A797528216BB99000CF6A80"
-               BuildableName = "InPlayerWebviewLogin.framework"
-               BlueprintName = "InPlayerWebviewLogin"
-               ReferencedContainer = "container:InPlayerWebviewLogin.xcodeproj">
+               BuildableName = "DIRTVisionInplayerWebviewLogin.framework"
+               BlueprintName = "DIRTVisionInplayerWebviewLogin"
+               ReferencedContainer = "container:DIRTVisionInplayerWebviewLogin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,31 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6A797528216BB99000CF6A80"
+            BuildableName = "DIRTVisionInplayerWebviewLogin.framework"
+            BlueprintName = "DIRTVisionInplayerWebviewLogin"
+            ReferencedContainer = "container:DIRTVisionInplayerWebviewLogin.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6A797531216BB99100CF6A80"
-               BuildableName = "InPlayerWebviewLoginTests.xctest"
-               BlueprintName = "InPlayerWebviewLoginTests"
-               ReferencedContainer = "container:InPlayerWebviewLogin.xcodeproj">
+               BuildableName = "DIRTVisionInplayerWebviewLoginTests.xctest"
+               BlueprintName = "DIRTVisionInplayerWebviewLoginTests"
+               ReferencedContainer = "container:DIRTVisionInplayerWebviewLogin.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A797528216BB99000CF6A80"
-            BuildableName = "InPlayerWebviewLogin.framework"
-            BlueprintName = "InPlayerWebviewLogin"
-            ReferencedContainer = "container:InPlayerWebviewLogin.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -66,13 +64,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A797528216BB99000CF6A80"
-            BuildableName = "InPlayerWebviewLogin.framework"
-            BlueprintName = "InPlayerWebviewLogin"
-            ReferencedContainer = "container:InPlayerWebviewLogin.xcodeproj">
+            BuildableName = "DIRTVisionInplayerWebviewLogin.framework"
+            BlueprintName = "DIRTVisionInplayerWebviewLogin"
+            ReferencedContainer = "container:DIRTVisionInplayerWebviewLogin.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -84,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A797528216BB99000CF6A80"
-            BuildableName = "InPlayerWebviewLogin.framework"
-            BlueprintName = "InPlayerWebviewLogin"
-            ReferencedContainer = "container:InPlayerWebviewLogin.xcodeproj">
+            BuildableName = "DIRTVisionInplayerWebviewLogin.framework"
+            BlueprintName = "DIRTVisionInplayerWebviewLogin"
+            ReferencedContainer = "container:DIRTVisionInplayerWebviewLogin.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

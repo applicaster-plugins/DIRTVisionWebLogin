@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39DB230E1942C0B72EF1E413 /* Pods_InPlayerWebviewLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105D2595CDB9C40E6CE4E37B /* Pods_InPlayerWebviewLoginTests.framework */; };
-		6A310F9B21FA080B00FAFA0C /* InPlayerWebviewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A310F9921FA080B00FAFA0C /* InPlayerWebviewLogin.swift */; };
+		641DF578DBAB7DCDC55FDB99 /* Pods_DIRTVisionInplayerWebviewLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42A623C1F22ED1B236AA580 /* Pods_DIRTVisionInplayerWebviewLoginTests.framework */; };
+		6A310F9B21FA080B00FAFA0C /* DIRTVisionInplayerWebviewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A310F9921FA080B00FAFA0C /* DIRTVisionInplayerWebviewLogin.swift */; };
 		6A310F9C21FA080B00FAFA0C /* InPlayerWebviewLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A310F9A21FA080B00FAFA0C /* InPlayerWebviewLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A310F9E21FA086700FAFA0C /* InPlayerWebviewLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A310F9D21FA086700FAFA0C /* InPlayerWebviewLoginTests.swift */; };
+		6A310F9E21FA086700FAFA0C /* DIRTVisionInplayerWebviewLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A310F9D21FA086700FAFA0C /* DIRTVisionInplayerWebviewLoginTests.swift */; };
 		6A682179235F06F00048DD11 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A682177235F06F00048DD11 /* APIClient.swift */; };
 		6A68217A235F06F00048DD11 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A682178235F06F00048DD11 /* Storage.swift */; };
-		6A797533216BB99100CF6A80 /* InPlayerWebviewLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A797529216BB99000CF6A80 /* InPlayerWebviewLogin.framework */; };
+		6A797533216BB99100CF6A80 /* DIRTVisionInplayerWebviewLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A797529216BB99000CF6A80 /* DIRTVisionInplayerWebviewLogin.framework */; };
 		6A95C0F9233A6C5400819FAF /* InPlayerWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95C0F5233A6C5400819FAF /* InPlayerWebViewController.swift */; };
 		6A95C0FA233A6C5400819FAF /* FullScreenWKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95C0F6233A6C5400819FAF /* FullScreenWKWebView.swift */; };
 		6A95C0FB233A6C5400819FAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95C0F7233A6C5400819FAF /* Constants.swift */; };
@@ -21,7 +21,7 @@
 		6A95C101233A6C6900819FAF /* InPlayerWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A95C0FD233A6C6900819FAF /* InPlayerWebViewController.xib */; };
 		6A95C102233A6C6900819FAF /* av_close_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A95C0FE233A6C6900819FAF /* av_close_btn@3x.png */; };
 		6A95C103233A6C6900819FAF /* av_close_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A95C0FF233A6C6900819FAF /* av_close_btn@2x.png */; };
-		A0BE99ED519EB485DD070680 /* Pods_InPlayerWebviewLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4F8F4B14A79F65919AC419 /* Pods_InPlayerWebviewLogin.framework */; };
+		9C8FA5E70E49A46DDFD75B02 /* Pods_DIRTVisionInplayerWebviewLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CB38E388B1C16E5E2320A9 /* Pods_DIRTVisionInplayerWebviewLogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,19 +35,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		105D2595CDB9C40E6CE4E37B /* Pods_InPlayerWebviewLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InPlayerWebviewLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A4F8F4B14A79F65919AC419 /* Pods_InPlayerWebviewLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InPlayerWebviewLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43FFF3EDF89EE907AE7255D0 /* Pods-InPlayerWebviewLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InPlayerWebviewLogin.release.xcconfig"; path = "Target Support Files/Pods-InPlayerWebviewLogin/Pods-InPlayerWebviewLogin.release.xcconfig"; sourceTree = "<group>"; };
+		0E3601382B55B66B49FB12E5 /* Pods-DIRTVisionInplayerWebviewLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DIRTVisionInplayerWebviewLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-DIRTVisionInplayerWebviewLoginTests/Pods-DIRTVisionInplayerWebviewLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23CB38E388B1C16E5E2320A9 /* Pods_DIRTVisionInplayerWebviewLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DIRTVisionInplayerWebviewLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E3E4675E3530C8C9F5AAEE /* Pods-DIRTVisionInplayerWebviewLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DIRTVisionInplayerWebviewLoginTests.release.xcconfig"; path = "Target Support Files/Pods-DIRTVisionInplayerWebviewLoginTests/Pods-DIRTVisionInplayerWebviewLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A916C591BC27A8FF163B5F4 /* Pods_RanSportScreenPlugins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RanSportScreenPlugins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ACD75901733919B56450EB /* Pods_RanSportScreenPluginsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RanSportScreenPluginsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A310F9921FA080B00FAFA0C /* InPlayerWebviewLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InPlayerWebviewLogin.swift; sourceTree = "<group>"; };
+		6A310F9921FA080B00FAFA0C /* DIRTVisionInplayerWebviewLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIRTVisionInplayerWebviewLogin.swift; sourceTree = "<group>"; };
 		6A310F9A21FA080B00FAFA0C /* InPlayerWebviewLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InPlayerWebviewLogin.h; sourceTree = "<group>"; };
-		6A310F9D21FA086700FAFA0C /* InPlayerWebviewLoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InPlayerWebviewLoginTests.swift; sourceTree = "<group>"; };
+		6A310F9D21FA086700FAFA0C /* DIRTVisionInplayerWebviewLoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIRTVisionInplayerWebviewLoginTests.swift; sourceTree = "<group>"; };
 		6A682177235F06F00048DD11 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		6A682178235F06F00048DD11 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		6A797529216BB99000CF6A80 /* InPlayerWebviewLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InPlayerWebviewLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A797529216BB99000CF6A80 /* DIRTVisionInplayerWebviewLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DIRTVisionInplayerWebviewLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A79752D216BB99000CF6A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A797532216BB99100CF6A80 /* InPlayerWebviewLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InPlayerWebviewLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A797532216BB99100CF6A80 /* DIRTVisionInplayerWebviewLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DIRTVisionInplayerWebviewLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A797539216BB99100CF6A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A95C0F5233A6C5400819FAF /* InPlayerWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InPlayerWebViewController.swift; sourceTree = "<group>"; };
 		6A95C0F6233A6C5400819FAF /* FullScreenWKWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenWKWebView.swift; sourceTree = "<group>"; };
@@ -56,10 +56,10 @@
 		6A95C0FD233A6C6900819FAF /* InPlayerWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InPlayerWebViewController.xib; sourceTree = "<group>"; };
 		6A95C0FE233A6C6900819FAF /* av_close_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "av_close_btn@3x.png"; sourceTree = "<group>"; };
 		6A95C0FF233A6C6900819FAF /* av_close_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "av_close_btn@2x.png"; sourceTree = "<group>"; };
-		9E3A0383C2F1439681BA3AE6 /* Pods-InPlayerWebviewLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InPlayerWebviewLogin.debug.xcconfig"; path = "Target Support Files/Pods-InPlayerWebviewLogin/Pods-InPlayerWebviewLogin.debug.xcconfig"; sourceTree = "<group>"; };
-		C9363B4FDB4B486B7050B4A6 /* Pods-InPlayerWebviewLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InPlayerWebviewLoginTests.release.xcconfig"; path = "Target Support Files/Pods-InPlayerWebviewLoginTests/Pods-InPlayerWebviewLoginTests.release.xcconfig"; sourceTree = "<group>"; };
-		D05A0E1484583B2301A43255 /* Pods-InPlayerWebviewLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InPlayerWebviewLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-InPlayerWebviewLoginTests/Pods-InPlayerWebviewLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D42D26863D25EBD2A7F4F374 /* Pods-DIRTVisionInplayerWebviewLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DIRTVisionInplayerWebviewLogin.release.xcconfig"; path = "Target Support Files/Pods-DIRTVisionInplayerWebviewLogin/Pods-DIRTVisionInplayerWebviewLogin.release.xcconfig"; sourceTree = "<group>"; };
+		D85EA1E94F51ED1A8C307C65 /* Pods-DIRTVisionInplayerWebviewLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DIRTVisionInplayerWebviewLogin.debug.xcconfig"; path = "Target Support Files/Pods-DIRTVisionInplayerWebviewLogin/Pods-DIRTVisionInplayerWebviewLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		E08B6D27BAD2684A252CBFB2 /* Pods_ExtendedWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExtendedWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42A623C1F22ED1B236AA580 /* Pods_DIRTVisionInplayerWebviewLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DIRTVisionInplayerWebviewLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0BE99ED519EB485DD070680 /* Pods_InPlayerWebviewLogin.framework in Frameworks */,
+				9C8FA5E70E49A46DDFD75B02 /* Pods_DIRTVisionInplayerWebviewLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A797533216BB99100CF6A80 /* InPlayerWebviewLogin.framework in Frameworks */,
-				39DB230E1942C0B72EF1E413 /* Pods_InPlayerWebviewLoginTests.framework in Frameworks */,
+				6A797533216BB99100CF6A80 /* DIRTVisionInplayerWebviewLogin.framework in Frameworks */,
+				641DF578DBAB7DCDC55FDB99 /* Pods_DIRTVisionInplayerWebviewLoginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +89,8 @@
 				5A916C591BC27A8FF163B5F4 /* Pods_RanSportScreenPlugins.framework */,
 				63ACD75901733919B56450EB /* Pods_RanSportScreenPluginsTests.framework */,
 				E08B6D27BAD2684A252CBFB2 /* Pods_ExtendedWebView.framework */,
-				3A4F8F4B14A79F65919AC419 /* Pods_InPlayerWebviewLogin.framework */,
-				105D2595CDB9C40E6CE4E37B /* Pods_InPlayerWebviewLoginTests.framework */,
+				23CB38E388B1C16E5E2320A9 /* Pods_DIRTVisionInplayerWebviewLogin.framework */,
+				F42A623C1F22ED1B236AA580 /* Pods_DIRTVisionInplayerWebviewLoginTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,10 +98,10 @@
 		5C8FD29ACC4BB215B03C1F31 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9E3A0383C2F1439681BA3AE6 /* Pods-InPlayerWebviewLogin.debug.xcconfig */,
-				43FFF3EDF89EE907AE7255D0 /* Pods-InPlayerWebviewLogin.release.xcconfig */,
-				D05A0E1484583B2301A43255 /* Pods-InPlayerWebviewLoginTests.debug.xcconfig */,
-				C9363B4FDB4B486B7050B4A6 /* Pods-InPlayerWebviewLoginTests.release.xcconfig */,
+				D85EA1E94F51ED1A8C307C65 /* Pods-DIRTVisionInplayerWebviewLogin.debug.xcconfig */,
+				D42D26863D25EBD2A7F4F374 /* Pods-DIRTVisionInplayerWebviewLogin.release.xcconfig */,
+				0E3601382B55B66B49FB12E5 /* Pods-DIRTVisionInplayerWebviewLoginTests.debug.xcconfig */,
+				28E3E4675E3530C8C9F5AAEE /* Pods-DIRTVisionInplayerWebviewLoginTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -109,8 +109,8 @@
 		6A79751F216BB99000CF6A80 = {
 			isa = PBXGroup;
 			children = (
-				6A79752B216BB99000CF6A80 /* InPlayerWebviewLogin */,
-				6A797536216BB99100CF6A80 /* InPlayerWebviewLoginTests */,
+				6A79752B216BB99000CF6A80 /* DIRTVisionInplayerWebviewLogin */,
+				6A797536216BB99100CF6A80 /* DIRTVisionInplayerWebviewLoginTests */,
 				6A79752A216BB99000CF6A80 /* Products */,
 				00337F2F348F290CE70A4F6A /* Frameworks */,
 				5C8FD29ACC4BB215B03C1F31 /* Pods */,
@@ -120,13 +120,13 @@
 		6A79752A216BB99000CF6A80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A797529216BB99000CF6A80 /* InPlayerWebviewLogin.framework */,
-				6A797532216BB99100CF6A80 /* InPlayerWebviewLoginTests.xctest */,
+				6A797529216BB99000CF6A80 /* DIRTVisionInplayerWebviewLogin.framework */,
+				6A797532216BB99100CF6A80 /* DIRTVisionInplayerWebviewLoginTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A79752B216BB99000CF6A80 /* InPlayerWebviewLogin */ = {
+		6A79752B216BB99000CF6A80 /* DIRTVisionInplayerWebviewLogin */ = {
 			isa = PBXGroup;
 			children = (
 				6A310F9A21FA080B00FAFA0C /* InPlayerWebviewLogin.h */,
@@ -135,23 +135,23 @@
 				6A95C0F7233A6C5400819FAF /* Constants.swift */,
 				6A95C0F6233A6C5400819FAF /* FullScreenWKWebView.swift */,
 				6A95C0F5233A6C5400819FAF /* InPlayerWebViewController.swift */,
-				6A310F9921FA080B00FAFA0C /* InPlayerWebviewLogin.swift */,
+				6A310F9921FA080B00FAFA0C /* DIRTVisionInplayerWebviewLogin.swift */,
 				6A79752D216BB99000CF6A80 /* Info.plist */,
 				6A95C0FC233A6C6900819FAF /* av_close_btn.png */,
 				6A95C0FF233A6C6900819FAF /* av_close_btn@2x.png */,
 				6A95C0FE233A6C6900819FAF /* av_close_btn@3x.png */,
 				6A95C0FD233A6C6900819FAF /* InPlayerWebViewController.xib */,
 			);
-			path = InPlayerWebviewLogin;
+			path = DIRTVisionInplayerWebviewLogin;
 			sourceTree = "<group>";
 		};
-		6A797536216BB99100CF6A80 /* InPlayerWebviewLoginTests */ = {
+		6A797536216BB99100CF6A80 /* DIRTVisionInplayerWebviewLoginTests */ = {
 			isa = PBXGroup;
 			children = (
-				6A310F9D21FA086700FAFA0C /* InPlayerWebviewLoginTests.swift */,
+				6A310F9D21FA086700FAFA0C /* DIRTVisionInplayerWebviewLoginTests.swift */,
 				6A797539216BB99100CF6A80 /* Info.plist */,
 			);
-			path = InPlayerWebviewLoginTests;
+			path = DIRTVisionInplayerWebviewLoginTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +168,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6A797528216BB99000CF6A80 /* InPlayerWebviewLogin */ = {
+		6A797528216BB99000CF6A80 /* DIRTVisionInplayerWebviewLogin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A79753D216BB99100CF6A80 /* Build configuration list for PBXNativeTarget "InPlayerWebviewLogin" */;
+			buildConfigurationList = 6A79753D216BB99100CF6A80 /* Build configuration list for PBXNativeTarget "DIRTVisionInplayerWebviewLogin" */;
 			buildPhases = (
 				7CD44BC90A5063AD88427811 /* [CP] Check Pods Manifest.lock */,
 				6A797524216BB99000CF6A80 /* Sources */,
@@ -182,14 +182,14 @@
 			);
 			dependencies = (
 			);
-			name = InPlayerWebviewLogin;
+			name = DIRTVisionInplayerWebviewLogin;
 			productName = RanSportScreenPlugins;
-			productReference = 6A797529216BB99000CF6A80 /* InPlayerWebviewLogin.framework */;
+			productReference = 6A797529216BB99000CF6A80 /* DIRTVisionInplayerWebviewLogin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6A797531216BB99100CF6A80 /* InPlayerWebviewLoginTests */ = {
+		6A797531216BB99100CF6A80 /* DIRTVisionInplayerWebviewLoginTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A797540216BB99100CF6A80 /* Build configuration list for PBXNativeTarget "InPlayerWebviewLoginTests" */;
+			buildConfigurationList = 6A797540216BB99100CF6A80 /* Build configuration list for PBXNativeTarget "DIRTVisionInplayerWebviewLoginTests" */;
 			buildPhases = (
 				573085A87153C9DF65B1AD69 /* [CP] Check Pods Manifest.lock */,
 				6A79752E216BB99100CF6A80 /* Sources */,
@@ -202,9 +202,9 @@
 			dependencies = (
 				6A797535216BB99100CF6A80 /* PBXTargetDependency */,
 			);
-			name = InPlayerWebviewLoginTests;
+			name = DIRTVisionInplayerWebviewLoginTests;
 			productName = RanSportScreenPluginsTests;
-			productReference = 6A797532216BB99100CF6A80 /* InPlayerWebviewLoginTests.xctest */;
+			productReference = 6A797532216BB99100CF6A80 /* DIRTVisionInplayerWebviewLoginTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +226,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A797523216BB99000CF6A80 /* Build configuration list for PBXProject "InPlayerWebviewLogin" */;
+			buildConfigurationList = 6A797523216BB99000CF6A80 /* Build configuration list for PBXProject "DIRTVisionInplayerWebviewLogin" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,8 +238,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A797528216BB99000CF6A80 /* InPlayerWebviewLogin */,
-				6A797531216BB99100CF6A80 /* InPlayerWebviewLoginTests */,
+				6A797528216BB99000CF6A80 /* DIRTVisionInplayerWebviewLogin */,
+				6A797531216BB99100CF6A80 /* DIRTVisionInplayerWebviewLoginTests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,7 +277,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InPlayerWebviewLoginTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DIRTVisionInplayerWebviewLoginTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -290,15 +290,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InPlayerWebviewLoginTests/Pods-InPlayerWebviewLoginTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DIRTVisionInplayerWebviewLoginTests/Pods-DIRTVisionInplayerWebviewLoginTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InPlayerWebviewLoginTests/Pods-InPlayerWebviewLoginTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DIRTVisionInplayerWebviewLoginTests/Pods-DIRTVisionInplayerWebviewLoginTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InPlayerWebviewLoginTests/Pods-InPlayerWebviewLoginTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DIRTVisionInplayerWebviewLoginTests/Pods-DIRTVisionInplayerWebviewLoginTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7CD44BC90A5063AD88427811 /* [CP] Check Pods Manifest.lock */ = {
@@ -316,7 +316,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InPlayerWebviewLogin-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DIRTVisionInplayerWebviewLogin-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -331,7 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A95C0FB233A6C5400819FAF /* Constants.swift in Sources */,
-				6A310F9B21FA080B00FAFA0C /* InPlayerWebviewLogin.swift in Sources */,
+				6A310F9B21FA080B00FAFA0C /* DIRTVisionInplayerWebviewLogin.swift in Sources */,
 				6A95C0F9233A6C5400819FAF /* InPlayerWebViewController.swift in Sources */,
 				6A682179235F06F00048DD11 /* APIClient.swift in Sources */,
 				6A95C0FA233A6C5400819FAF /* FullScreenWKWebView.swift in Sources */,
@@ -343,7 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A310F9E21FA086700FAFA0C /* InPlayerWebviewLoginTests.swift in Sources */,
+				6A310F9E21FA086700FAFA0C /* DIRTVisionInplayerWebviewLoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +352,7 @@
 /* Begin PBXTargetDependency section */
 		6A797535216BB99100CF6A80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6A797528216BB99000CF6A80 /* InPlayerWebviewLogin */;
+			target = 6A797528216BB99000CF6A80 /* DIRTVisionInplayerWebviewLogin */;
 			targetProxy = 6A797534216BB99100CF6A80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -482,7 +482,7 @@
 		};
 		6A79753E216BB99100CF6A80 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E3A0383C2F1439681BA3AE6 /* Pods-InPlayerWebviewLogin.debug.xcconfig */;
+			baseConfigurationReference = D85EA1E94F51ED1A8C307C65 /* Pods-DIRTVisionInplayerWebviewLogin.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -491,7 +491,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/InPlayerWebviewLogin/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DIRTVisionInplayerWebviewLogin/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,7 +499,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.InPlayerWebviewLogin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.DIRTVisionInplayerWebviewLogin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -509,7 +509,7 @@
 		};
 		6A79753F216BB99100CF6A80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43FFF3EDF89EE907AE7255D0 /* Pods-InPlayerWebviewLogin.release.xcconfig */;
+			baseConfigurationReference = D42D26863D25EBD2A7F4F374 /* Pods-DIRTVisionInplayerWebviewLogin.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -518,7 +518,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/InPlayerWebviewLogin/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DIRTVisionInplayerWebviewLogin/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,7 +526,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.InPlayerWebviewLogin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.DIRTVisionInplayerWebviewLogin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,10 +535,10 @@
 		};
 		6A797541216BB99100CF6A80 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D05A0E1484583B2301A43255 /* Pods-InPlayerWebviewLoginTests.debug.xcconfig */;
+			baseConfigurationReference = 0E3601382B55B66B49FB12E5 /* Pods-DIRTVisionInplayerWebviewLoginTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = InPlayerWebviewLoginTests/Info.plist;
+				INFOPLIST_FILE = DIRTVisionInplayerWebviewLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,10 +552,10 @@
 		};
 		6A797542216BB99100CF6A80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9363B4FDB4B486B7050B4A6 /* Pods-InPlayerWebviewLoginTests.release.xcconfig */;
+			baseConfigurationReference = 28E3E4675E3530C8C9F5AAEE /* Pods-DIRTVisionInplayerWebviewLoginTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = InPlayerWebviewLoginTests/Info.plist;
+				INFOPLIST_FILE = DIRTVisionInplayerWebviewLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,7 +570,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A797523216BB99000CF6A80 /* Build configuration list for PBXProject "InPlayerWebviewLogin" */ = {
+		6A797523216BB99000CF6A80 /* Build configuration list for PBXProject "DIRTVisionInplayerWebviewLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A79753B216BB99100CF6A80 /* Debug */,
@@ -579,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A79753D216BB99100CF6A80 /* Build configuration list for PBXNativeTarget "InPlayerWebviewLogin" */ = {
+		6A79753D216BB99100CF6A80 /* Build configuration list for PBXNativeTarget "DIRTVisionInplayerWebviewLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A79753E216BB99100CF6A80 /* Debug */,
@@ -588,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A797540216BB99100CF6A80 /* Build configuration list for PBXNativeTarget "InPlayerWebviewLoginTests" */ = {
+		6A797540216BB99100CF6A80 /* Build configuration list for PBXNativeTarget "DIRTVisionInplayerWebviewLoginTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A797541216BB99100CF6A80 /* Debug */,

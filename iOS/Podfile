@@ -11,10 +11,10 @@ def shared_pods
     pod 'ZappLoginPluginsSDK'
 end
 
-target 'InPlayerWebviewLogin' do
+target 'DIRTVisionInplayerWebviewLogin' do
   shared_pods
 end
 
-target 'InPlayerWebviewLoginTests' do
+target 'DIRTVisionInplayerWebviewLoginTests' do
   shared_pods
 end

@@ -11,7 +11,7 @@ import WebKit
 import ZappLoginPluginsSDK
 import ZappPlugins
 
-public class InPlayerWebviewLogin: NSObject, ZPLoginProviderUserDataProtocol, ZPAppLoadingHookProtocol {
+public class DIRTVisionInplayerWebviewLogin: NSObject, ZPLoginProviderUserDataProtocol, ZPAppLoadingHookProtocol {
 
     public var configurationJSON: NSDictionary?
     

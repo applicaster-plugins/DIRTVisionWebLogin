@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import InPlayerWebviewLogin
+@testable import DIRTVisionInplayerWebviewLogin
 
-class InPlayerWebviewLoginTests: XCTestCase {
+class DIRTVisionInplayerWebviewLoginTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
