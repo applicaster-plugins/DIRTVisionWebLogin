@@ -7,7 +7,7 @@
     ]
   },
   "dependency_repository_url": [
-    "https://github.com/applicaster/DIRTVisionWebLogin.git"
+    "https://github.com/applicaster-plugins/DIRTVisionWebLogin.git"
   ],
   "platform": "ios",
   "author_name": "Vlad Sumtsov",
